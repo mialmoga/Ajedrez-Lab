@@ -15,20 +15,20 @@ línea que se está abriendo, e intercambio por PNG para jugar contra una IA sin
 
 <table>
   <tr>
-    <td align="center"><img src="img/shoot1.jpg" width="400"><br><sub>3d + 2d</sub></td>
-    <td align="center"><img src="img/shoot2.jpg" width="400"><br><sub>Replay en Modo Cine</sub></td>
+    <td align="center"><img src="img/shoot1.png" width="400"><br><sub>3d + 2d</sub></td>
+    <td align="center"><img src="img/shoot2.png" width="400"><br><sub>Replay en Modo Cine</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="img/shoot3.jpg" width="400"><br><sub>Experimenta partidas entre motores</sub></td>
-    <td align="center"><img src="img/shoot4.jpg" width="400"><br><sub>Aprende de tus errores</sub></td>
+    <td align="center"><img src="img/shoot3.png" width="400"><br><sub>Experimenta partidas entre motores</sub></td>
+    <td align="center"><img src="img/shoot4.png" width="400"><br><sub>Aprende de tus errores</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="img/shoot5.jpg" width="400"><br><sub>Stockfish Lite 19 WASM integrado</sub></td>
-    <td align="center"><img src="img/shoot6.jpg" width="400"><br><sub>Narrador y análisis de presición</sub></td>
+    <td align="center"><img src="img/shoot5.png" width="400"><br><sub>Narrador y análisis de presición</sub></td>
+    <td align="center"><img src="img/shoot6.png" width="400"><br><sub>Librería de aperturas</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="img/shoot7.jpg" width="400"><br><sub>Torneo</sub></td>
-    <td align="center"><img src="img/shoot8.jpg" width="400"><br><sub>Liga</sub></td>
+    <td align="center"><img src="img/shoot7.png" width="400"><br><sub>Torneo</sub></td>
+    <td align="center"><img src="img/shoot8.png" width="400"><br><sub>Liga</sub></td>
   </tr>
 </table>
 

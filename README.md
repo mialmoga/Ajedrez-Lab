@@ -74,6 +74,7 @@ library/            tus JSON (index.json lista los que se cargan al arrancar)
 vendor/             chess.js 1.4.0, three 0.186 y fuentes DejaVu (copiados, sin npm)
 docs/               arquitectura, formato JSON, motores, intercambio PNG
 tests/              pruebas puntuales
+tools/              suites de pruebas exhaustivas 
 ```
 
 ## Documentación
@@ -87,7 +88,7 @@ tests/              pruebas puntuales
 ## Notas honestas
 
 - El motor propio es de nivel "club decente": ~100–200 mil nodos/s, profundidad 6 en medio juego en
-  unos 3 s. Para más fuerza, la idea es enchufar Stockfish WASM como segundo motor (ver docs/MOTORES.md).
+  unos 3 s. Para más fuerza y análisis incorporamos Stockfish WASM como segundo motor (ver docs/MOTORES.md).
 - El motor usa la **API interna** de chess.js 1.4.0 por velocidad; por eso `vendor/chess` está fijado.
 - La vista 3D usa piezas procedurales (sin modelos externos). Requiere WebGL; sin él, usa la vista 2D.
 

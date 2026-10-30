@@ -1,5 +1,9 @@
 # Ajedrez Lab
 
+<p align="center">
+  <img src="assets/banner.png" alt="Ajedrez Lab">
+</p>
+
 Laboratorio de ajedrez **modular y sin bundler** (módulos ES nativos): tablero 3D + 2D sincronizados,
 motores intercambiables, librería de aperturas/partidas explicadas en JSON con detección de la
 línea que se está abriendo, e intercambio por PNG para jugar contra una IA sin API.

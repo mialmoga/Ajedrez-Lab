@@ -1,0 +1,9 @@
+{
+  "formato": "ajedrez-lab/explicaciones-config@1",
+  "_ayuda": "Umbrales del juez (centipeones = centésimas de peón desde el punto de vista de quien movió). Si la evaluación cae al menos 'imprecision' → imprecisión; 'error' → error; 'errorGrave' → error serio. 'mateMax': mates de hasta N jugadas que se anuncian como amenaza. 'tiempoMaxMs' y 'profundidadMax': tope por búsqueda del juez (cada jugada analizada usa 2–3 búsquedas). 'mejorJugadaMaxVentaja': solo se anuncia «la mejor jugada» si la posición no estaba ya decidida.",
+  "umbrales": { "imprecision": 50, "error": 120, "errorGrave": 300 },
+  "mateMax": 3,
+  "tiempoMaxMs": 500,
+  "profundidadMax": 14,
+  "mejorJugadaMaxVentaja": 300
+}

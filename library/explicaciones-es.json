@@ -1,0 +1,148 @@
+{
+  "formato": "ajedrez-lab/explicaciones@1",
+  "idioma": "es",
+  "_ayuda": "Plantillas con huecos {…}. Cada id tiene varias variantes (se elige una según la jugada). Huecos de pieza: {pieza} → 'el caballo', {Pieza} → 'El caballo' (también capturada, objetivo, objetivo2, atacante, protegida, clavada, detras, nueva). Otros: {casilla} (casilla de la pieza que mueve), {c1} y {c2} (casillas de objetivos), {desde}, {desde}, {columna}, {n}, {rival} → 'las negras'. Quita o cambia frases con libertad; si un id no tiene plantilla, ese hecho se omite. Los ids del juez (imprecision, error, error_grave, mate_perdido, mate_recibe, amenaza_mate, mejor_jugada) usan además {juez} (nombre del juez), {antes} y {despues} (evaluación, +/- peones, vista de blancas), {n} y {mejorTxt} (opcional: ' Probablemente era mejor Nf3.'). Veredictos del juez (motor): huecos {juez}, {perdida} (peones), {mejor} (jugada en SAN), {n}. 'umbrales' en centipeones controla cuándo se habla de imprecisión/error.",
+  "plantillas": {
+    "jaque_mate": [
+      "¡Jaque mate! {Pieza} en {casilla} termina la partida.",
+      "Jaque mate con {pieza} en {casilla}: el rey no tiene escapatoria."
+    ],
+    "ahogado": [
+      "Ahogado: {rival} no tienen jugadas legales sin estar en jaque, así que son tablas."
+    ],
+    "jaque": [
+      "{Pieza} da jaque desde {casilla}.",
+      "Jaque con {pieza} en {casilla}: obliga a responder."
+    ],
+    "jaque_descubierto": [
+      "Jaque descubierto: al mover {pieza} se abre la línea de otra pieza hacia el rey."
+    ],
+    "enroque_corto": [
+      "Enroque corto: pone al rey a salvo y activa la torre."
+    ],
+    "enroque_largo": [
+      "Enroque largo: el rey se refugia y la torre sale al centro."
+    ],
+    "promocion": [
+      "El peón corona en {casilla} y se convierte en {nueva}."
+    ],
+    "captura_gana": [
+      "{Pieza} captura {capturada} en {casilla} y gana material.",
+      "{Pieza} toma {capturada} en {casilla}: se lleva material sin compensación inmediata."
+    ],
+    "captura_cambio": [
+      "{Pieza} toma {capturada} en {casilla}: probablemente propone un cambio de piezas.",
+      "Cambio de material en {casilla}: {pieza} por {capturada}."
+    ],
+    "recaptura": [
+      "{Pieza} recaptura en {casilla} y restablece el equilibrio material."
+    ],
+    "captura_desigual": [
+      "{Pieza} toma {capturada} en {casilla}, pero esa casilla está defendida: probablemente cede más valor del que gana, buscando algo a cambio."
+    ],
+    "ofrece_pieza": [
+      "{Pieza} va a {casilla}, una casilla atacada: probablemente es un sacrificio con compensación (o un descuido)."
+    ],
+    "horquilla": [
+      "Horquilla: {pieza} en {casilla} ataca a la vez {objetivo} en {c1} y {objetivo2} en {c2}."
+    ],
+    "amenaza": [
+      "{Pieza} amenaza {objetivo} en {c1}.",
+      "{Pieza} apunta a {objetivo} en {c1}: probablemente busca ganar material."
+    ],
+    "clavada": [
+      "{Pieza} clava {clavada} en {c1}: si se mueve, queda al descubierto {detras}."
+    ],
+    "evasion_captura": [
+      "Responde al jaque capturando {capturada} con {pieza}."
+    ],
+    "evasion_rey": [
+      "El rey sale del jaque yéndose a {casilla}."
+    ],
+    "evasion_bloqueo": [
+      "Responde al jaque interponiendo {pieza} en {casilla}."
+    ],
+    "retirada": [
+      "{Pieza} se pone a salvo en {casilla}: probablemente porque {atacante} de {rival} la atacaba.",
+      "{Pieza} se aparta a {casilla}; probablemente estaba amenazada por {atacante}."
+    ],
+    "retroceso": [
+      "{Pieza} retrocede a {casilla}: probablemente porque {atacante} la atacaba.",
+      "{Pieza} da un paso atrás hacia {casilla} para evitar la captura por {atacante}."
+    ],
+    "defiende": [
+      "{Pieza} protege {protegida} en {c1}, que estaba en peligro."
+    ],
+    "desarrollo": [
+      "{Pieza} sale a {casilla}: desarrolla una pieza y la acerca a la acción.",
+      "Desarrollo: {pieza} a {casilla}, una pieza menos en casa."
+    ],
+    "dama_temprana": [
+      "Sacar la dama tan pronto suele exponerla a ataques; probablemente busca presión rápida."
+    ],
+    "centro": [
+      "El peón ocupa {casilla}: toma espacio en el centro.",
+      "Peón a {casilla}, peleando por el control del centro."
+    ],
+    "columna_abierta": [
+      "La torre ocupa la columna {columna}, que está abierta (sin peones): probablemente prepara presión sobre ella."
+    ],
+    "columna_semiabierta": [
+      "La torre va a la columna {columna}, semiabierta: probablemente apunta a un peón rival."
+    ],
+    "peon_pasado": [
+      "Avanza su peón pasado a {casilla}: nadie puede frenarlo con peones."
+    ],
+    "peon_pasado_cerca": [
+      "Peón pasado a {casilla}, a {n} casilla(s) de coronar: es una amenaza seria."
+    ],
+    "palanca": [
+      "El peón en {casilla} ataca el peón de {c1}: probablemente busca abrir o debilitar la estructura rival."
+    ],
+    "dobla_peones": [
+      "La captura deja peones doblados en la columna de {casilla}: probablemente a cambio de otra ventaja."
+    ],
+    "repara_peones": [
+      "La captura con peón arregla los peones doblados de su columna."
+    ],
+    "rey_activo": [
+      "Con pocas piezas en el tablero, el rey se acerca al centro a {casilla}: en el final el rey es una pieza activa."
+    ],
+    "imprecision": [
+      "Probablemente no era lo más preciso: cede {perdida} peones de ventaja (según {juez})."
+    ],
+    "error": [
+      "Probablemente es un error: cede {perdida} peones (según {juez})."
+    ],
+    "error_grave": [
+      "Probablemente es un error serio: la evaluación cae {perdida} peones (según {juez})."
+    ],
+    "mate_perdido": [
+      "Probablemente dejó escapar un mate en {n} (según {juez}); era mejor {mejor}."
+    ],
+    "mate_recibe": [
+      "Según {juez}, tras esta jugada {rival} tiene mate en {n}.{mejorTxt}"
+    ],
+    "amenaza_mate": [
+      "Amenaza mate en {n} (según {juez})."
+    ],
+    "mejor_jugada": [
+      "Probablemente la mejor jugada (según {juez})."
+    ],
+    "mejor_era": [
+      "Era mejor {mejor}."
+    ],
+    "mejor_defensa": [
+      "Probablemente la mejor defensa en una posición difícil (según {juez})."
+    ]
+  },
+  "umbrales": {
+    "imprecision": 50,
+    "error": 120,
+    "errorGrave": 300,
+    "mateMax": 6,
+    "mejorMinVentaja": 150,
+    "amenazaMateMax": 3,
+    "juezTiempoMs": 350
+  }
+}

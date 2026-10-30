@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ajedrez Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/ui/styles.css">
+  <!-- Sin bundler: módulos ES nativos. "three" se resuelve por import map a vendor/ -->
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>Ajedrez Lab necesita JavaScript.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "ajedrez-lab",
+  "version": "0.1.0",
+  "description": "Laboratorio de ajedrez modular: tablero 3D+2D, motores intercambiables, librería de aperturas explicadas e intercambio por PNG.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8090",
+    "ablacion": "node tools/ablacion.mjs",
+    "pruebas": "node tools/pruebas.mjs",
+    "test": "node tests/smoke.test.mjs && node tests/tournament.test.mjs && node tests/worker.test.mjs && node tests/explain.test.mjs && node tests/stockfish.test.mjs && node tests/league.test.mjs && node tests/minimax2.test.mjs && node tests/judge.test.mjs && node tests/partida.test.mjs && node tests/autosave.test.mjs && node tests/parse-move.test.mjs && node tests/modo.test.mjs && node tests/marcas.test.mjs && node tests/analisis.test.mjs && node tests/cine.test.mjs && node tests/tension.test.mjs && node tests/adjudicar.test.mjs && node tests/autopsia.test.mjs"
+  }
+}

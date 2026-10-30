@@ -1,0 +1,22 @@
+{
+  "formato": "ajedrez-lab/minimax2-config@1",
+  "_ayuda": "Funciones del Minimax v2 al arrancar la app (true = activada). Cambia un valor y recarga la página. En Jugar, Torneo y Liga cada jugador/participante con Minimax v2 puede sobrescribirlas con sus casillas. Con todo en false se comporta como el v1. Detalle de cada función: docs/MINIMAX2.md.",
+  "funciones": {
+    "parAlfiles": true,
+    "torresColumnas": true,
+    "estructuraPeones": true,
+    "peonesPasados": true,
+    "seguridadRey": true,
+    "movilidad": true,
+    "finalArrinconar": true,
+    "nullMove": true,
+    "lmrMejorado": true,
+    "aspiracion": true,
+    "contraataque": true,
+    "podaQuiescence": true,
+    "repeticiones": true,
+    "iteracionParcial": true,
+    "gravedadHistorial": true,
+    "tiempoDinamico": false
+  }
+}

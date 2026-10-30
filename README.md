@@ -1,16 +1,40 @@
+<div align="center">
+  
+![Ajedrez Lab](assets/banner.png)
+
 # Ajedrez Lab
 
-<p align="center">
-  <img src="assets/banner.png" alt="Ajedrez Lab">
-</p>
+### ♞ [Jugar](https://mialmoga.github.io/Ajedrez-Lab/)
 
+</div>
 Laboratorio de ajedrez **modular y sin bundler** (módulos ES nativos): tablero 3D + 2D sincronizados,
 motores intercambiables, librería de aperturas/partidas explicadas en JSON con detección de la
 línea que se está abriendo, e intercambio por PNG para jugar contra una IA sin API.
 
-## Arrancar
+## 📸 Capturas
 
-No hay build ni `npm install`. Solo un servidor estático (los módulos ES no cargan desde `file://`):
+<table>
+  <tr>
+    <td align="center"><img src="img/shoot1.jpg" width="400"><br><sub>3d + 2d</sub></td>
+    <td align="center"><img src="img/shoot2.jpg" width="400"><br><sub>Replay en Modo Cine</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="img/shoot3.jpg" width="400"><br><sub>Experimenta partidas entre motores</sub></td>
+    <td align="center"><img src="img/shoot4.jpg" width="400"><br><sub>Aprende de tus errores</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="img/shoot5.jpg" width="400"><br><sub>Stockfish Lite 19 WASM integrado</sub></td>
+    <td align="center"><img src="img/shoot6.jpg" width="400"><br><sub>Narrador y análisis de presición</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="img/shoot7.jpg" width="400"><br><sub>Torneo</sub></td>
+    <td align="center"><img src="img/shoot8.jpg" width="400"><br><sub>Liga</sub></td>
+  </tr>
+</table>
+
+---
+
+## Arrancar
 
 ```bash
 python3 -m http.server 8090      # o: npm start
